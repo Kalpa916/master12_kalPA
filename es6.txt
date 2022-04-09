@@ -1,0 +1,76 @@
+	//ES5
+var x = function(x, y) {
+   return x * y;
+}
+//ES6 onwards
+
+const x=(x,y)=>x*y
+var cars=["BMW","Volvo","Mini"]
+
+var x
+for(x of cars){
+document.write(x);
+}
+var text="Javascript";
+var x;
+for (x of text){
+document.write(x+"<br>")
+}
+class Car{
+ constructor(name,year){
+	this.name=name;
+	this.year=year
+}
+}
+let myCar1=new Car("Ford",2019)
+let myCar2=new Car("Audi",2020)
+//javascript promises
+let myPromise=new Promise(function(myResolve,myReject)){
+myResolve();
+myReject();
+})
+myPromise.then(
+function(value)
+function(error)
+)
+
+
+let myPromise=new Promise(function(myResolve,myReject){
+setTimeout(function(){myResolve("I Love You!!");},3000;
+
+})
+myPromise.then(function(value){
+document.getElementById("demo").innerHTML=value;
+});
+
+
+
+---------------------|
+#array destrucuring  |
+---------------------|
+const myproglang=['js','php','c','python']
+let [top1,top2,top3,top4]=myproglang;
+console.log("My fav prog lang is "+top1);
+const(myproglang.length)
+if we want only last one 
+let [top1,,,,toplast]=myproglang;
+console.log("My fav prog lang"+top1)
+console.log(`My fav prog lang ${top1} and my least fav is ${toplast}`)
+
+
+
+
+|====================|
+|object destructuring|
+|====================|
+let student={
+rollno:20,
+name:'Prijin'
+cgpa:7.2
+
+}
+
+//destructuring to same property name
+let{name,cgpa}=student
+console.log(name)
+console.log(cgpa)
