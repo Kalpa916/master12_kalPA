@@ -1,0 +1,24 @@
+<!-- example on JS new features -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS New6</title>
+ </head>
+<body>
+  <h2>Demo on string interpolation </h2>
+  <script>
+    let name="Ram";
+	let age=15;
+
+    document.write(name + " " + age + " years old<br>");
+    document.write("${name} ${age} years old<br>");  //invalid
+	document.write(`${name} ${age} years old <br>`);
+  
+    n=10;
+	for(i=1; i<=10; i++)
+    {
+	  document.write(`${n} * ${i} = ${n*i} <br>`);
+    }
+  </script>
+</body>
+</html>

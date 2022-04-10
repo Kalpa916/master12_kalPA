@@ -1,0 +1,35 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>constructor</title>
+</head>
+<body>
+<h1> creating object with constructor without parameters </h1>
+<script>
+  function Book()  //dev constructor
+  {				
+    this.name = "C Prog";  //properties
+    this.year = 2020;
+  }
+/* public class Book
+   {
+     String name;
+     int year;
+   public Book()  <== constructor
+   {
+     name="C Prog";
+     year=2020;
+    } 
+   }  */
+
+  var firstBook = new Book();  //calling const
+  var secondBook = new Book(); 
+  //var third = Book();  its invalid operation
+
+  document.write(`${firstBook.name}  ==> ${firstBook.year} <br>`);           
+  document.write(`${secondBook.name} ==> ${secondBook.year} <br>`);   
+  document.write(firstBook, "<br>", secondBook, "<br>");   
+</script>
+</body>
+</html>
+

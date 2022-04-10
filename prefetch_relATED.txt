@@ -1,0 +1,15 @@
+select_related() "follows" foreign-key relationships, selecting additional related-object data when it executes its query.
+
+prefetch_related() does a separate lookup for each relationship, and does the "joining" in Python.
+
+
+def delete_data(request,id):
+	if(request.method=='POST'):
+		user=Studebtregistration.objects.get(pk=id)
+		user.delete()
+
+def edit_data(request,id):
+	if(request.method=='POST'):
+		user=Studebtregistration.objects.get(pk=id)
+		reg=Studnbtregistration(request.POST,instance=user)
+A one-to-one relationship. Conceptually, this is similar to a ForeignKey with unique=True, but the "reverse" side of the relation will directly return a single object.

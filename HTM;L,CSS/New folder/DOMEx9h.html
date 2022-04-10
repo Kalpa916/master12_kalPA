@@ -1,0 +1,26 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom Demo19</title>  
+ </head>
+ <body>
+    <h2>demo on element attributes</h2>
+    <input type="text" id="t" size="20" placeholder="enter username" name="una"> 
+    <br>
+    <script>
+      let t = document.getElementById("t").attributes;  //it returns Map object
+
+      document.write( t +"<br>");
+   
+      for(let x of t ) {
+        document.write(x +"&nbsp;&nbsp;&nbsp;&nbsp;" + x.name +"&nbsp;&nbsp;&nbsp;&nbsp;" +  x.value +"<br>");
+      }
+
+
+	  document.write( document.getElementById("t").hasAttribute("size"), "<br>" );
+	  document.write( document.getElementById("t").hasAttribute("style"), "<br>" );
+
+   </script>
+ </body>
+</html>

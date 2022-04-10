@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type='text/javascript'>
+	  function div()
+	  {
+	   try
+	   {
+         var x = eval(t1.value);  
+		 var y = eval(t2.value);
+         var res = x/y;
+		 alert("Div "+res);		
+	   }catch(exp1){
+          alert("Plz enter number only");
+       }
+	 }
+	</script>
+ </head>
+ <body>
+	<label>First Number</label>
+	<input type="text" id="t1"> <br>
+
+	<label>Second Number</label>
+	<input type="text" id="t2"> <br>
+   
+    <button onclick="div()">Division</button>
+ </body>
+</html>

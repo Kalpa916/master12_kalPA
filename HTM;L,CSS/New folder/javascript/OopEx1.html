@@ -1,0 +1,30 @@
+<!-- example on OOPs -->
+<Html>
+<body>
+<h1> demo on creating object with literals </h1>
+<script>						
+    //object with properties
+    var stu1 = {"id" : 1, "name" : "ram", "marks": 80};  //"" used
+
+/* in java/.net:
+	public class Student
+	{
+	  int id=1;
+	  String name="ram";
+	  int marks=80;
+	Student stu1=new Student();	  */
+
+	var stu2= {id : 2, name : "sam", marks: 90};  // "" not used
+
+	document.write("Id	:"+ stu1.id +"<br>");
+	document.write("Name	:"+ stu1.name +"<br>");
+	document.write("Marks	:"+ stu1.marks +"<br>");
+	document.write( stu1 +"<br><br>");   //stu1.toString()
+
+	document.write("Id	:"+ stu2.id +"<br>");
+	document.write("Name	:"+ stu2.name +"<br>");
+	document.write("Marks	:"+ stu2.marks +"<br>");
+	document.write( stu2 );  //stu2.toString()
+</script>
+</body>
+</html>

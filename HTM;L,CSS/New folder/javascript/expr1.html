@@ -1,0 +1,35 @@
+<!-- example reg expr -->
+
+<input type="text" id="na"> 
+<input type="button" onclick="fun1()" value="Check Data">
+<script>
+ function fun1()
+ {
+    var name = na.value;
+    var expr = /Siva/i;   //OR var expr = new RegExp(/siva/); 
+
+    var res = expr.test( name );
+    alert(res);
+ }
+</script>
+
+<!--
+		var expr-obj = /reg-expr/				data pattern
+
+			expr-obj.test(ele-obj)  is method of regexpr 
+								=> true
+								=> false
+
+					[ ] => data should place here				[aj]
+					 -  => data range									[a-z]  
+					without - => its not range, it takes as in	    
+					\w => word			
+					\d => only digit
+					/i => case-insensitive 
+					/g => global (means any in data)				
+			    	^ => not 
+                    *  => any length
+					{count} => length spe (no.of chars)
+					{MIN, MAX} => range spe (min leng, max len)
+	-->			
+

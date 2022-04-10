@@ -1,0 +1,34 @@
+<!-- demo on JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JS30</title>
+  </head>
+  <body>
+     <h2>demo on html with js </h2>
+      <h2>Simple Intreset Calculation</h2>
+      <label>Pamt</label> <br>
+      <input type="text" id="p"> <br>
+
+      <label>Time</label> <br>
+      <input type="text" id="t"> (in Years) <br>
+
+      <label>Roi</label> <br>
+      <input type="text" id="r"> <br>
+      <button onclick="compute()">get interest</button> <br>
+      <output id="result"> </output>      
+
+     <script>
+       function compute()
+	   {
+         let pamt = parseFloat( p.value );
+         let ti = parseInt( t.value );
+         let roi = parseFloat( r.value );
+		 let si = pamt*ti*roi/100;
+         result.value = "Interest Amount : Rs."+si;
+       }
+    </script>
+  </body>
+</html>
+

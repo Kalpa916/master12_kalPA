@@ -1,0 +1,27 @@
+<!-- example on enabling & disableing button -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Events Demo</title>
+  <script>
+    function fun1()
+	{
+	  let cb=document.getElementById("cb");
+      if(cb.checked==true) 
+	     document.getElementById("sb").disabled="";  //enable
+	  else if(cb.checked==false)
+	     document.getElementById("sb").disabled="disable";	
+	}
+  </script>
+ </head>
+<body>
+   <h1 id="head1"> Demo on Change event </h1>
+			UI Form
+   <input type="checkbox" id="cb"> <label>I Accepted Terms & Conditions </label>
+   <input type="submit" id="sb" value="Submit" disabled> <br> <br>
+
+   <script>
+     document.getElementById("cb").addEventListener("change", fun1 );  
+   </script>
+ </body>
+</html>	

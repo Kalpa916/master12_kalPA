@@ -1,0 +1,54 @@
+<!--  grade assume:
+		80-100		=>   A+
+		70-79		=>   A
+		60-69		=>   B
+		50-59		=>   C
+		40-49		=>   D
+		0-39			=> Fail
+
+Note: pass for every sub is 40
+
+<!-- demo on JS -->d
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JS31</title>
+  </head>
+  <body>
+     <h2>demo on html with js </h2>
+      <h2>Student Marks Report</h2>
+      <label>RollNo</label> <br>
+      <input type="text" id="rollNo"> <br>
+
+      <label>Name</label> <br>
+      <input type="text" id="name"> <br>
+
+      <label>Marks In HTML</label> <br>
+      <input type="text" id="html"> <br>
+
+      <label>Marks In CSS</label> <br>
+      <input type="text" id="css"> <br>
+
+      <label>Marks In JS</label> <br>
+      <input type="text" id="js"> <br>
+
+      <button onclick="findGrade()">Result</button> <br>
+      <output id="tot"> </output> <br>
+      <output id="avg"> </output> <br>
+     <script>
+       function findGrade()
+	   {
+         let hm = parseInt( html.value );
+         let cm = parseInt( css.value );
+         let jm = parseInt( js.value );
+
+		 let total = hm+cm+jm;
+         let avge = total/3;
+		 tot.value = "Total Marks :"+total;
+         avg.value = "Average :"+ avge;
+       }
+    </script>
+  </body>
+</html>
+

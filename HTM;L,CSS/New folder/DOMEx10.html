@@ -1,0 +1,29 @@
+<!-- example on element object with js -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Element Object</title>
+  <script>
+    function changeStyle()
+    {
+	  let d1=document.getElementById("d1").style;
+      d1.color="green";
+      d1.backgroundColor="yellow";
+	  d1.fontSize='30px';
+	  d1.fontFamily="Tahoma";
+	  d1.width="500px";
+	  d1.height="100px";
+	  d1.border="5px solid red";
+    }
+   </script>
+ </head>
+ <body>
+    <div id="d1"> Demo on style attribute </div>
+    <h1 id="h">Demo on style</h1>
+    <button onclick="changeStyle()">Click Here</button>  
+    
+   <button onclick="document.getElementById('h').innerHTML+=' Dynamic'">
+    Press Here
+   </button>  
+ </body>
+</html>

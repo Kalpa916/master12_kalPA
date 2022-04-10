@@ -1,0 +1,38 @@
+<!-- exmaple on prototype with literal -->
+<html>
+ <head>
+   <script>
+      //creating object
+      var p = { name:"Soap", unitPrice:50, qty:5};	//Object.name="Soap"
+   </script>
+ </head>
+<body>
+  <script>
+    //adding new property to an existing object
+	Object.prototype.gst=10;
+	Object.prototype.discount=2;
+
+    //adding new method to an existing object
+    Object.prototype.getAmount=function(){
+													  amt=this.qty*this.unitPrice;
+													  gstamt=amt*this.gst/100;
+													  da=amt*discount/100;
+													  return amt+gstamt-da;
+												 };
+/*
+p = { name:"Soap", unitPrice:40, qty:5, gst:10,
+				"getAmount":function(){
+					                  amt=this.qty*this.unitPrice;
+									  gstamt=amt*this.gst/100;
+									  return amt+gstamt;
+				                 }
+   };  	*/
+
+	document.write(`Name	: ${p.name} <br>`);
+	document.write(`Qty	: ${p.qty} <br>`);
+	document.write(`UnitPrice	: ${p.unitPrice} <br>`);
+
+	document.write(`TotalAmt	:${p.getAmount()} <br>`);
+  </script>
+</bodY>
+</html>

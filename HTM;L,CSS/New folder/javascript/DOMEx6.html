@@ -1,0 +1,41 @@
+<!-- example on DOM  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>DOM Demo6</title>
+ </head>
+ <body>
+    <h1>demo on document object Properties</h1>
+    <a href="http://www.google.com">Google</a> <br>
+    <a href="http://www.youtube.com">Youtube</a> <br>
+    
+    <img src="a.jpg" width="200px" height="200px"> 
+    <img src="b.jpeg" width="200px" height="200px"> <br>
+	<hr>
+
+    <script>
+       window.document.write("Title => " + document.title + "<br>");
+		//document.title="text";
+
+       let h = document.head; //it returns <head> tag instance
+       let b = document.body; //it returns <body> tag instance
+
+       document.write("h => " + h, "<br>");
+       document.write("b => " + b, "<br>");
+
+	   let imgs=document.images; //imgs is array
+   	   document.write("imgs => "+ imgs +"<br>");
+       for (i of imgs){
+          document.write(i.src + "<br>");
+       }
+
+       let lins=document.links;  //a is array
+	   document.write("lins => " + lins +"<br>")
+       for (t of lins){
+          document.write(t.href + "<br>");
+       }	  
+
+	   document.write("Url => " + document.URL );
+    </script>
+ </body>
+</html>

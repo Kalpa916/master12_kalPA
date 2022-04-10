@@ -1,0 +1,25 @@
+<!-- example on document object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>DOM Demo10</title>
+	<style>
+		.a{
+			color:red;
+		}
+	</style>
+ </head>
+ <body>
+    <h2> demo on getElementsByClassName() method </h2>
+    <p class="a">Red Zone</p>
+    <div class="a">Orange Zone</div>	
+    <h2 class="a">Green Zone</h2>
+
+    <script>
+      let ob=document.getElementsByClassName("a");
+      document.write( ob +"<br>");
+	  for(var t of ob)
+        document.write( t +"<br>");
+    </script>
+  </body>
+</html>

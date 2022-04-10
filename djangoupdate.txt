@@ -1,0 +1,12 @@
+
+from django.contrib.auth.models import User
+
+class CUser(User):
+    score = models.IntegerField()
+
+The custom user has an additional field (“score”), we want to do the following operations using ORM queries only. Every answer must have a single query:
+
+Calculate the mean score of all users.
+Find the user with the highest score.
+Change the score value of all users in a single query to 100 (one hundred)
+User.obj...all().update(score=100)

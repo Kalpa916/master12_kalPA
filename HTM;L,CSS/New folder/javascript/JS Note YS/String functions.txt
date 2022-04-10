@@ -1,0 +1,94 @@
+Strings
+-------
+> string is a sequence of chars.
+		ex: "apples"		"apples123"		'a1234@'
+> string are represented with "  " or '  '   (literals).
+> strings can be created using backticks ` ` (template literals).
+> for wroking with these string js provide some lib functions are called string functions, these functions are provided by String class.
+> string functions are used to perform manipulations on strings (mutable string).
+
+		
+
+With template literals, you can do string interpolation using ${variable} inside template literals:
+
+concat()
+used for concatination for two strings
+	str1.concat(str2)
+
+reverse()
+used re-arrange string right to left
+	str.reverse()		CCO
+
+
+split()
+it splits string into multiple string, based deliminator
+def deli space or tab or enter
+	str.split(delim)
+
+join()
+it comb multiple strings and formed in single string
+	var.join(delim)
+
+length
+it return len of string (no.of chars)
+	str.length
+
+strcmp()
+it comp two strings, it checks spell & case
+	strcmp(str1, str2)
+
+charAt()
+it return char ava @ the given index or retrieving char based on index
+	str.charAt(index)
+
+charCodeAt()
+it return ascii of char ava @ the given index
+	str.charCodeAt(index)
+
+toUpperCase()
+converting the given string into upper case
+
+toLowerCase()
+converting the given string into lower case
+
+trimLeft()
+it remove whitespace ava @begining string
+
+trimRight()
+it remove whitespace ava @end string
+
+substring()
+it used extracting some string from orig string
+
+	strvar.method()
+	"string".method()
+
+indexOf()
+> used to search a char or a string.
+> if sea-str is found it return index, if not found it return -1.
+> it return 1st occurence of string
+
+lastIndexOf()
+> used to search a char or a string.
+> if sea-str is found it return index, if not found it return -1.
+> it return last occurence of string
+
+replace() 
+will return a string that has all occurrences of substrings matching the RegExp or string substring with a string replacement or the returned value of replace Function.
+Note: this does not modify the string in place, but returns the string with replacements.
+
+
+
+
+
+
+
+
+
+   <script>
+     function reverseString(str) {    
+       return str.split('').reverse().join(''); 
+     }
+   </script>
+
+   document.write( reverseString(st1) +"<br>"); 

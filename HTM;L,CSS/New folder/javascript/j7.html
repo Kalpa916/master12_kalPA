@@ -1,0 +1,31 @@
+<!-- demo on JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JS7</title>
+  </head>
+  <body>
+     <h2>demo on designing html page dynamically</h2>
+    <button onclick="fun1()">Create Page</button>
+
+     <script>
+       function fun1()
+       {
+          document.write("<html>");
+          document.write("<head>");
+          document.write("<meta charset='UTF-8'>");
+          document.write("<title>Dynamic Page</title>");
+          document.write("</head>");
+          document.write("<body>");
+          document.write("<form action='testurl'>");
+          document.write("<h2>Login Page</h2>");
+          document.write("<label>Username</label> <br>");
+          document.write('<input type="text" id="t1" name="uid"> <br>'); 
+          document.write('<label>Password</label> <br> <input type="password" id="t2" name="pwd"> <br>'); 
+          document.write('<input type="submit" value="Login">');
+          document.write("</form> </body> </html>");
+       }
+     </script>
+  </body>
+</html>

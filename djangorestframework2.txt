@@ -1,0 +1,40 @@
+REST:IT IS AN ARCHITECHTURAL PLAN
+Client--HTTP REQUEST API
+API will communicate JSON
+Web Application Database provides required data to API
+API returns response to client
+
+C:POST
+R:GET
+U:PUT/PATCH
+D:DELETE
+https://geekyshows.com/api/students
+        -------------/2/   /---3-----/-RESOURCE API
+	       1
+	    BASE_URL  /NAMING CONVENTION/
+
+============
+Request
+---------
+put/patch=https://geekyshows.com/api/students/1(if we want to update id=1)
+C:api/students
+R:GET
+U:api/students/1
+D:api/students/1
+
+POST:api/students/1
+GET:api/students
+PUT/PATCH:api/students/1
+DELETE:api/students/1
+
+wb api
+-----
+client made request to API
+API will coomunicate to Web application database
+web application databaseprovides required data to api
+API RETURNS Data to client
+
+
+FLOW
+======
+Mobile->Web Api->Web Application->Database->>Web Application->mobile(either by json or xml)

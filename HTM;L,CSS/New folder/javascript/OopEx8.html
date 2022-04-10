@@ -1,0 +1,31 @@
+<!-- Object Array -->
+<html>
+<body>
+<h1> Creating Object Array with Constructor Function </h1>
+<script>
+	function Movie(name,hero,dir)  //constructor
+	{
+		this.name=name;
+		this.hero=hero;
+		this.dir=dir;
+	}
+	
+   //object array
+   /* let m1 = new Movie("Bharath","Mahesh","Siva");
+      let m2 = new Movie("ASVR","Ntr","Trivikram");
+      let movies = [m1, m2]; 
+			OR		*/
+   let movies=[ new Movie("Bharath","Mahesh","Siva"), 
+						new Movie("ASVR","Ntr","Trivikram") 
+					  ];
+
+   //retrieving data from array
+   for(i=0; i<movies.length; i++){
+      document.write(movies[i].name, "&nbsp;&nbsp;", movies[i].hero, "&nbsp;&nbsp;", movies[i].dir+"<br>");
+   }
+   
+   document.write(movies);
+</script>
+</body>
+</html>
+

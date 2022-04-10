@@ -1,0 +1,24 @@
+<!-- example on document object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>DOM Demo8</title>
+ </head>
+ <body>
+    <h2>demo on getElementsByName() method </h2>
+    
+    <p name="t">Object finding methods</p>
+    <div name="t">demo on getElement</div>
+
+    <script>
+      let d=document.getElementsByName("t");
+						//p object cre & init
+						//div object cre & init
+						//coll = p, div
+		
+      document.write( d +"<br>");
+	  for(var t of d)
+         document.write( t +"<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!-- demo on JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JS15</title>
+  </head>
+  <body>
+     <h2>demo on non-primitive datatypes </h2>
+     <script>
+		//object creation and initialized with defaults
+        var st = new String();		
+		var n = new Number();
+		var b = new Boolean();
+		let d = new Date();
+		let a = new Array();
+
+       document.write("st =>  ", st, "  =>   " , typeof st, "<br>");
+       document.write("n =>  ", n, "  =>   " , typeof n, "<br>");
+       document.write("b =>  ", b, "  =>   " , typeof b, "<br>");
+       document.write("d =>  ", d, "  =>   " , typeof d, "<br>");
+       document.write("a =>  ", a, "  =>   " , typeof a, "<br>");
+
+		//object creation and initialized with given data
+        var st1 = new String("Siva Kumar Y");
+		var n1 = new Number(1001);
+		var b1 = new Boolean(true);
+		let d1 = new Date("30-aug-2020");
+		let a1 = new Array(10,20,30);
+
+       document.write("st1 =>  ", st1, "  =>   " , typeof st1, "<br>");
+       document.write("n1 =>  ", n1, "  =>   " , typeof n1, "<br>");
+       document.write("b1 =>  ", b1, "  =>   " , typeof b1, "<br>");
+       document.write("d1 =>  ", d1, "  =>   " , typeof d1, "<br>");
+       document.write("a1 =>  ", a1, "  =>   " , typeof a1, "<br>");
+     </script>
+  </body>
+</html>

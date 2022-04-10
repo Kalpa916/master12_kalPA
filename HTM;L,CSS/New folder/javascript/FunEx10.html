@@ -1,0 +1,33 @@
+<!-- example on functions  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex10</title>
+ </head>
+ <body>
+   <h2> Demo on parameter with default value (since JS6) </h2>
+   <script> 
+    //finding sum of 3values
+
+	function sum(a=0, b=0, c=0)   //FA with defaults
+	{
+	  let res=a+b+c;
+	  document.write("Sum is "+ res +"<br>");
+	}
+
+    sum(10,25,60);  //call1	
+	sum(22,45);  //call2			
+	sum();  //call3
+	sum(30);  //call4
+    sum(1,2,3,4); //call5
+    sum("a","b","c"); //call6
+   </script>
+ </body>
+</html>
+
+
+
+
+
+
+

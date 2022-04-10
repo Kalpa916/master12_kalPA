@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #d1{
+       background-color:#3399ff;
+       visibility: visible;
+     }
+    .d2{
+       background-color:#ff9966;
+       visibility: hidden;
+     }
+</style>
+</head>
+<body>
+    <div id="d1">
+        im in visible mode
+    </div>
+
+    <div  id="d2" class="d2">
+        im in hidden mode
+    </div>
+    <h1>Hello </h1>
+    
+    <label>Select UR Option</label>
+    <input type="radio" name="r" onclick="document.getElementById('d2').style.visibility='visible';"> Show It
+	&nbsp; 	&nbsp; 	&nbsp;
+    <input type="radio" name="r" onclick="document.getElementById('d2').style.visibility='hidden';"> Hide It
+
+</body>
+</html>
+
+

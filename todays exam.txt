@@ -1,0 +1,154 @@
+def input(request):
+	if(request.method=='POST'):
+		form=NameForm(request.POST)
+		if(form.is_valid()):
+		form.save()
+	else:
+	form=NameForm()
+	return render(request,base.html,{'forms':form}
+def login(request):
+	if(request.method=='POST'):
+		forms=Regform(request.POST)
+		if(forms.is_valid()):
+			f1=forms.cleaned_data['user']
+			f2=forms.cleaned_data['pwd']
+			reg=
+			
+class StudebRegistration(models.Model):
+ename=models.CharField(max_length=400)
+esal=models.IntegerField()
+-----------
+admin_panel
+------------
+from .models import StudebRegistration
+class StudebRegistrationAdmin(admin.ModelAdmin):
+	list_dispaly=['ename','esal']
+admin.site.register(StudebRegistration,StudebRegistrationAdmin)
+forms.py
+-------
+from .models import StudebRegistration
+from django import forms
+class StudenRegistration(forms.ModelForm):
+	class Meta:
+	model=StudebRegistration
+	fields=['ename','sal']
+	widgets={'ename':forms.TextInput(attrs={'class':'form-control'}),
+		'esal'=forms.TextInput(attrs={'class':'form-control'})}
+views.py
+--------
+from.forms import StudenRegistration
+from django.contrib import messages
+from django.db.models import Max,Min,Count
+def input(request):
+	(if request.method=='POST'):
+		form=StudenRegistration(request.POST)
+		if(form.is_valid()):
+			fm=form.cleaned_data['ename']
+			fm2=form.cleaned_data['esal']
+			reg=StudebRegistration(fm=ename,fm2=sal)
+			reg.save()
+			messages.add_messages(request,message.SUCESS,'YOUR ACCOUNT HAS CREATED')
+	else:
+		form=StudenRegistration()
+	stu=StudebRegistration.objects.all()
+	mu=stu.aggregate(Max('integerfield'))
+	return render(request,base.html,'forms':form,'students':stu)
+
+static
+-----
+STATICFILES_DIRS=[STATIC_DIR]
+base.html
+---------
+<form action="" method='POST'>
+{% csrf_token %}
+{{ forms.as_p }}
+</form>
+{% if messages %}
+{% for message in messages %}
+<span>{{message}}</span>
+<div class='col-sm-9'>
+{% if students %}
+<table>
+<thead>
+<th>EName</th>
+<th>ESAL</th>
+</thead>
+<tbody>
+{% for st in students %}
+<tr>
+<td>{{st.ename}}</td>
+<td>{{st.esal}}</td
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+</div>
+<!--Performing url actions
+<a href='{% url 'update_' st.id %}'>edit</a>
+<form action="{% url 'delete_' st.id %}" method="post">
+{% csrf_token %}
+<input type="submit" value="delete" class="btn btn-suceess">
+</form>
+
+views.py
+-------
+def edit_data(request):
+	(if request.method=='POST'):
+		user=StudebRegistration.objects.get(pk=id)
+		stk=StudenRegistration(request.POST,instance=user)
+		if(stk.is_valid()):
+			stk.save()
+	else:
+	   user=StudebRegistration.objects.get(pk=id)
+	   stk=StudenRegistration(instance=user)
+	return render(request,'base.html')
+		
+-->
+from django.views import View
+class Mview(View):
+	name="Sonam"
+	def get(self,request):
+		return HttpResponse(self.name)
+path('cl3/',views.Mview.as_view(),name='cl3')
+
+
+class mview2(request):
+	def get(self,request):
+		context={''}
+
+#Performing addition of two numbers.
+views.py
+-------
+def input(request):
+	return render(request,base.html)
+def input_details(request):
+	x=int(request.GET['t1'])
+	y=int(request.GET['t2'])
+	z=x+y
+	return HttpResponse("<html><body>"+str(z)+"</body></html>")
+base.html
+---------
+<html>
+<body>
+<form action="./Add" method='POST'>
+<label>Enter First Name</label>
+<input type="text" name="t1" placeholder="Enter First Name">
+<label>Enter Second name</label>
+<input type="text" name="t2" placeholder="Enter First Name">
+</form>
+</body>
+</html>
+app.urls.py
+-----------
+from .import views
+urlpatterns=[
+	url(r'^$',views.input),
+	url(r'Add',views.input_details)
+]
+
+project.urls.py
+----------------
+from django.conf.urls import url
+from demoapp import views
+path('/',include(dapp.urls))

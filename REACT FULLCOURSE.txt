@@ -1,0 +1,1150 @@
+*
+ReactDOM.render(
+  <>
+<h1>THAPA TECHNIAL NETFLIX PICK</h1>
+  <p>LIST OF 5 best series</p>
+<ol>
+  
+    <li>DARK SHADE</li>
+    <li>DARK SHADE </li>
+    <li>DARK SHADE</li>
+    <li>DARK SHADE</li>
+  
+</ol>
+  </>
+  ,document.getElementById('root')); 
+
+var h1=document.createElement('h1');
+h1.innerHTML="Thapa Technical";
+document.getElementById("root").appendChild(h1);
+
+|-------------------|
+|template literals  |
+|-------------------|
+const flname="vinod";
+const lname="thapa";
+ReactDOM.render(
+<>
+<h1>{flname}</h1>
+  <p>my lucky number is {Math.random()}</p>
+  <h2>My last name is {`${lname}`}</h2>
+  <p> {`My first name is ${flname} and lastname is ${lname}`}</p>
+  </>
+  ,document.getElementById("root"));
+
+|-------------------|
+|date and time      |
+|-------------------|
+const name="kanha"
+const currDate=new Date().toLocaleDateString();
+const currTime=new Date().toLocaleTimeString();
+
+ReactDOM.render(<>
+<h1>Hello my name is {`${name}`}</h1>
+<p>Current Date is{`${currDate}`} </p>
+<p>Current Time is{`${currTime}`}</p>
+</>,
+document.getElementById("root")
+
+)
+
+|---------------------|
+|HTML VS JSX ATTRIBUTE|
+|---------------------|
+
+
+const name="kanha"
+const img1="https://picsum.photos/id/100/2500/1656"
+const img2="https://picsum.photos/id/1025/4951/3301"
+const img3="https://picsum.photos/id/1024/1920/1280"
+const links="https://picsum.photos/images"
+ReactDOM.render(
+  <>
+  <h1 contentEditable="true">My name is {name}</h1>
+  <img src={img1} alt="randomImages"/>  
+  <img src={img2} alt="randomImages"/>  
+  <a href={links} target="_thapa">
+  <img src={img3} alt="randomImages"/> 
+  </a> 
+  
+  
+  </>,
+  document.getElementById('root')
+
+
+);
+|-------------------------------------|
+|CSS STYLING and effets using in react|
+|-------------------------------------|
+=========
+index.js
+========
+//var React= require('react');
+//var ReactDOM=require('react-dom');
+
+import React from 'react';
+import  ReactDOM from 'react-dom';
+import './index.css';
+
+const name="kanha"
+const img1="https://picsum.photos/id/100/2500/1656"
+const img2="https://picsum.photos/id/1025/4951/3301"
+const img3="https://picsum.photos/id/1024/1920/1280"
+const links="https://picsum.photos/images"
+ReactDOM.render(
+  <>
+  <h1 className="heading">My name is {name}</h1>
+  <div className="img_div">
+  <img src={img1} alt="randomImages"/>  
+  <img src={img2} alt="randomImages"/>  
+  <a href={links} target="_thapa">
+  <img src={img3} alt="randomImages"/> 
+  </a> 
+  </div>
+
+  
+  </>,
+  document.getElementById('root')
+
+
+);
+=======
+index.css
+=========
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading{
+  color:rgb(28, 75, 116);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-shadow: 0px 2px 4px #ffe9c5;
+}
+.img_div{
+  width:200px;
+  height:150px;
+  margin: auto;
+  
+}
+|---------------------------|
+|INternal jsx vs inline JSX |
+|---------------------------|
+
+
+//var React= require('react');
+//var ReactDOM=require('react-dom');
+
+import React from 'react';
+import  ReactDOM from 'react-dom';
+import './index.css';
+
+const name="kanha"
+const img1="https://picsum.photos/id/100/2500/1656"
+const img2="https://picsum.photos/id/1025/4951/3301"
+const img3="https://picsum.photos/id/1024/1920/1280"
+const links="https://picsum.photos/images"
+
+
+const heading={
+  color:'#fa9191',
+  textTransform:'capitalize',
+  textAlign:"center",
+  textShadow:'bold',
+  textShadow:'0px 2px 4px #ffe295',
+  fontFamily:'"Josefin Slab"'
+}
+
+ReactDOM.render(
+  <>
+  <h1 style={heading} >My name is {name}</h1>
+  <div className="img_div">
+  <img src={img1} alt="randomImages"/>  
+  <img src={img2} alt="randomImages"/>  
+  <a href={links} target="_thapa">
+  <img src={img3} alt="randomImages"/> 
+  </a> 
+  </div>
+
+  
+  </>,
+  document.getElementById('root')
+
+
+);
+===============================|
+index.html(using google fonts) |
+===============================|
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>React App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;1,700&display=swap" rel="stylesheet">  
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+  
+      
+    </div>
+
+  <div class="container">
+
+  </div>
+  </body>
+</html>
+
+==========================================
+imp::::we have to use same name using font-family
+==================================================
+
+|---------------------------|
+|Greetings apps in react    |
+|---------------------------|
+=========
+index.js
+=========
+//var React= require('react');
+//var ReactDOM=require('react-dom');
+
+import React from 'react';
+import  ReactDOM from 'react-dom';
+import './index.css';
+
+
+
+let curDate=new Date(2020,5,5,24);
+curDate=curDate.getHours();
+let greeting='';
+const cssStyle={ }; 
+
+if(curDate>=1 && curDate<12){
+  greeting='Good Morning';
+  cssStyle.color='green'
+}else if(curDate>=12 && curDate<20){
+  greeting='Good AfterNoon';
+  cssStyle.color='blue'
+}
+else{
+  greeting='Good Evening';
+  cssStyle.color='yellow'
+}
+
+ ReactDOM.render(
+   <>
+   <div>
+<h1>Hello Sir,<span style={cssStyle}>{greeting} </span></h1>,
+</div>
+</>,
+document.getElementById("root")
+
+  
+ );
+
+=========|
+index.css|
+=========|
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(241, 209, 209);
+}
+div{
+  width: 100%;
+  height:100vh;
+  display: flex;
+  margin-top: -30px;
+}
+h1{
+  padding: 20px 20px;
+  background-color: #724906;
+  color:#3a409e;
+  border-radius: 20pxs;
+}
+span{
+  color:#170963;
+}
+
+
+|---------------------------|
+|Components in react        |
+|---------------------------|
+========
+index.js
+========
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'
+
+ReactDOM.render(
+
+  <App></App>,
+
+  
+  document.getElementById("root")
+
+);
+========
+Apps.jsx
+=========
+import React from 'react';
+import Heading from './Heading';
+import Pars from './Pars';
+import Pops from './Pops';
+
+
+
+function App(){
+    return(
+        <>
+     <Heading />
+  <Pars />
+  <Pops />
+
+
+        </>
+    );
+}
+export default App;
+
+=======
+pops.jsx
+========
+import React from 'react';
+
+function Pops(){
+    return (
+        <ol>
+            <li>Vinod</li>
+            <li>Bahadur</li>
+            <li>Thapa</li>
+        </ol>
+    );
+
+}
+export default Pops;
+===========
+Heading.jsx
+===========
+import React from 'react';
+
+function Heading(){
+    return <h1>My name is Kanha</h1>;
+}
+export default Heading;
+==========
+Pars.jsx
+=========
+import React from 'react';
+
+function Pars(){
+    return <p>I LOVE YOU FIDAA </p>;
+}
+export default Pars; 
+
+
+|---------------------------|
+|import and export in react |
+|---------------------------|
+
+=========
+index.js
+========
+import React from 'react';
+import ReactDOM from 'react-dom'
+import youtuber,{favprog,myName} from './App'
+//import * as q from './App';
+ReactDOM.render(
+  <>
+  
+  
+  <ol>
+<li>Thapa</li>
+<li>{youtuber}</li>
+<li>{favprog}</li>
+<li>{myName()}</li>
+  </ol>
+
+  
+  
+  </>,
+  document.getElementById("root")
+
+);
+======
+App.jsx
+======
+const youtuber="Thapa Technial";
+const favprog="React JS";
+
+function myName(){
+    let nam=''
+    return (nam="Vinod");
+}
+export default youtuber;
+export {favprog,myName};
+
+
+|---------------------------|
+|Components in react        |
+|---------------------------|
+========
+index.js
+========
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+//import * as q from './App';
+ReactDOM.render(
+ <App />,
+  document.getElementById("root")
+
+);
+
+=======
+Heading.jsx
+===========
+import React from 'react';
+
+function add(x1,x2){
+    
+    return(x1+x2);
+}
+function sub(x1,x2){
+    return(x1-x2);
+}
+function mul(x1,x2){
+    return(x1*x2)
+}
+function div(x1,x2){
+    let div=x1/x2;
+    div=div.toFixed(2);
+    return div
+} 
+export {add,sub,mul,div} 
+
+======
+app,jsx
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {add,sub,mul,div} from './Heading';
+
+
+
+
+
+function App(){
+    return (
+        <ol>
+  <h2>
+<li>sum of two number is {add(10,20)}</li>
+<li>sub of two number is {sub(10,20)}</li>
+<li>mul of two number is {mul(10,20)}</li>
+<li>div of two number is {div(10,20)}</li>
+</h2>
+  </ol>
+    )
+
+}
+export default App;
+
+
+----------------------|
+REACT JAVASCRIPT ARRAY|
+----------------------|
+array.map(function(currentValue,index,arr),thisValue)
+const studentdata=[
+{id:1,name:"vinod",degree:"MCS"},
+{id:2,name:"Thapa",degree:"BCS"},
+{id:2,name:"Technical",degree:"BCS"},
+
+]
+How to write arrow function==studentdata.map(function(cvalue)===studentdata.map((cvalue) =>{
+const newdata=studentdata.map((cvalue) => {
+	return `My name is ${cvalue.name}.My highest score is ${cvalue.degree}`
+
+
+});
+console.log(newdata);
+document.getElementById('showdata').innerHTML=newdata;
+
+
+-------------------|
+React Hooks	   |
+-------------------|
+app.jsx
+-------
+import React, { useState } from 'react';
+
+
+
+
+
+let count=1
+
+
+
+const App=()=>{
+ //const state=useState(5);
+ const [count,setCount]=useState(1000)
+ 
+    const IncNum=()=>{
+        setCount(count - 1);
+        console.log("clicked");
+    }
+
+    
+
+
+
+    return (
+        <>
+
+        <h1>{count}</h1>
+        <button onClick={IncNum}>Click Me</button>
+
+        </>
+);
+
+};
+export default App;
+
+index.js
+-------
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from "./App";
+import "./index.css";
+-----------------|
+dynamic date	 |
+-----------------|
+
+app.js
+--
+import React ,{useState}from 'react';
+
+
+const App=()=>{
+let newTime=new Date().toLocaleTimeString();
+
+const UpdateTime= ()=>{
+    let newTime=new Date().toLocaleTimeString();
+    setCtime(newTime);
+}
+    
+const [ctime,setCtime]=useState(newTime)
+
+
+
+    return (
+        <>
+
+        <h1>{newTime}</h1>
+        <button onClick={UpdateTime} >Get Time</button>
+
+        </>
+);
+
+};
+export default App;
+
+
+
+
+ReactDOM.render(
+    <App/>,document.getElementById("root")
+
+
+);
+
+
+--------------=-----|
+hooks  color change |
+--------------------|
+app.jsx
+--------
+import React, { useState } from 'react';
+
+
+const App=()=>{
+    const purple="green"
+    const [bg ,setbg]=useState(purple);
+    const [name,setName]=useState("click me")
+    
+
+const bgChange=()=>{
+    //console.log('clicked')
+    let newBg="yellow";
+    setbg(newBg)
+    setName("Ouch!!")
+}
+const bgBack=()=>{
+    setbg(purple);
+    setName("ayyo")
+
+}
+
+    return (
+        <>
+    <div style={{ backgroundColor: bg }}>
+<button onClick=              
+onDoubleClick={bgBack}>{name}</button>
+    </div>
+        
+        </>
+);
+
+};
+export default App;
+
+
+
+
+----------- |
+basic forms |
+----------- |
+======
+app.js
+=======
+import React, { useState } from 'react';
+
+
+const App=()=>{
+    const [name, setName] = useState("");
+    const [fullName,setFullName] = useState();
+
+const onSubmit=()=>{
+    setFullName(name);
+}
+    const InputEvent=(event)=>{
+        console.log(event.target.value)
+        setName(event.target.value)
+    }
+    
+
+    return (
+        <>
+        <div>
+  
+  <h1>Hello{fullName}</h1>
+  <input type="text" placeholder ="enter your name" onChange={InputEvent} />
+  <button onClick={onSubmit}>Click Me</button>
+    
+
+  </div>
+        
+        </>
+);
+
+};
+export default App;
+
+
+=========================|
+taking two inputs fields |
+=========================|
+
+import React, { useState } from 'react';
+
+
+const App=()=>{
+    const [name, setName] = useState("");
+    const [fullName,setFullName] = useState("");
+    const  [lastName,setlastName]=useState("");
+    const [lastNamenew,setlastNamenew]=useState("");
+
+
+
+
+const onSubmits=(event)=>{
+    event.preventDefault();
+    setFullName(name);
+    setlastNamenew(lastName);
+}
+    const InputEvent=(event)=>{
+        console.log(event.target.value)
+        setName(event.target.value)
+    }
+    
+    const InputEvent2 = (event)=>{
+        setlastName(event.target.value)
+    }
+
+    return (
+        <>
+        <div className="main_div">
+    <form onSubmit={onSubmits}>
+  <h1>Hello{fullName}{lastNamenew}</h1>
+  <input type="text" placeholder ="enter your name" onChange={InputEvent} />
+  <br></br>
+  <input type="password" placeholder ="enter your password" onChange={InputEvent2} value={lastName} />
+
+  
+  
+  <button>Click Me</button>
+    
+</form>
+  </div>
+        
+        </>
+);
+
+};
+export default App;
+
+
+
+================================|
+handling complex multiple forms |
+=============================== |
+import React, { useState } from 'react';
+
+
+const App=()=>{
+    const [fullname, setfullName] = useState({
+        fname:"",
+        lname:""
+    });
+   
+
+
+
+
+const onSubmits=(event)=>{
+    event.preventDefault();
+    alert('form submitted')
+}
+    const InputEvent=(event)=>{
+        console.log(event.target.value)//it returns the user value of the fname that means fname(fname)
+
+
+        console.log(event.target.name)//it returns the name of the value(fname--value)
+        const value=event.target.value;//here we are creating referece variable and storing into the object
+        const name=event.target.name;//here we are creating referece variable and storing into the object
+
+
+        setfullName((preValue)=>{
+          //  console.log(preValue)
+            if(name=== 'fname'){
+                return{
+                fname:value,
+                lname:preValue.lname,
+                };
+
+            }else if(name==='lname'){
+                return{
+                    fname:preValue.fname,
+                    lname:value,
+                }
+            }
+
+
+
+        })
+    }
+    
+   
+
+    return (
+        <>
+        <div className="main_div">
+    <form onSubmit={onSubmits}>
+  <h1>Hello{fullname.fname}{fullname.lname}</h1>
+  <input type="text" value={fullname.fname} onChange={InputEvent} placeholder ="enter your name" name="fname"  />
+  <br></br>
+  <input type="password" value={fullname.lname} onChange={InputEvent} placeholder ="enter your password" name="lname"/>
+
+  
+  
+  <button>Click Me</button>
+    
+</form>
+  </div>
+        
+        </>
+);
+
+};
+export default App;
+
+
+
+======================|
+multiple forms created|
+-----------------------
+import React, { useState } from 'react';
+
+
+const App=()=>{
+    const [fullname, setfullName] = useState({
+        fname:"",
+        lname:"",
+        email:"",
+        phone:""
+    });
+   
+
+
+
+
+const onSubmits=(event)=>{
+    event.preventDefault();
+    alert('form submitted')
+}
+    const InputEvent=(event)=>{
+        console.log(event.target.value)//it returns the user value of the fname that means fname(fname)
+
+
+        console.log(event.target.name)//it returns the name of the value(fname--value)
+        const value=event.target.value;//here we are creating referece variable and storing into the object
+        const name=event.target.name;//here we are creating referece variable and storing into the object
+// we can create object destructuring
+        //const{value,name}=event.target
+
+        setfullName((preValue)=>{
+          //  console.log(preValue)
+            if(name=== 'fname'){
+                return{
+                fname:value,
+                lname:preValue.lname,
+                email:preValue.email,
+                phone:preValue.phone
+                
+                
+                };
+
+            }else if(name==='lname'){
+                return{
+                    fname:preValue.fname,
+                    lname:value,
+                    email:preValue.email,
+                    phone:preValue.phone
+                    
+                }
+            }
+            else if(name==='email'){
+                return{
+                    fname:preValue.fname,
+                    lname:preValue.lname,
+                    email:value,
+                    phone:preValue.phone,
+                   
+                    
+                }
+            }
+            else if(name==='phone'){
+                return{
+                    fname:preValue.fname,
+                    lname:preValue.lname,
+                    email:preValue.email,
+                    phone:value,
+
+                    
+                }
+            }
+
+
+
+        })
+    }
+    
+   
+
+    return (
+        <>
+        <div className="main_div">
+    <form onSubmit={onSubmits}>
+  <h1>Hello{fullname.fname}{fullname.lname}</h1>
+  <p>{fullname.email} {fullname.phone}</p>
+  <input type="text" value={fullname.fname} onChange={InputEvent} placeholder ="enter your name" name="fname"  />
+  <br></br>
+  <input type="password" value={fullname.lname} onChange={InputEvent} placeholder ="enter your password" name="lname"/>
+<br></br>
+<input type="number" value={fullname.phone} onChange={InputEvent} placeholder ="enter your number" name="phone"/>
+<br>
+
+</br> 
+  <input type="email" value={fullname.email} autoComplete="off" onChange={InputEvent} placeholder ="enter your email" name="email"/>
+
+  
+  <button>Click Me</button>
+    
+</form>
+  </div>
+        
+        </>
+);
+
+};
+export default App;
+============|
+context api|
+==========|
+parent component ==>Child ComponentA ==> Child ComponentB ==>Child ComponentC
+create three files 
+CompA
+CompB
+CompC
+In App.jsx
+-----------
+import react from React;
+import CompA from './CompA'
+
+const App=()=>{
+ return <CompA />
+
+}
+export default App
+-------------
+In CompA.jsx
+-------------
+import react from React
+const CompA=()=>{
+return <H1> This is Kalpataru Sahoo
+}
+
+export default CompA;
+----------------------------------|
+passing componentB data in compA  |
+--------------------------------- |
+CompB
+======
+import React from "react";
+import CompB from "./CompB";
+const CompB=()=>{
+	return <h1>Hello this is from compB</h1>
+
+}
+export default CompB;
+======
+CompA
+=====
+import React from "react";
+const CompA=()=>{
+	return <CompB />
+}
+export default CompA;
+
+(not done 51no-video)
+
+===================
+use effect
+-------------
+app.jsx
+--------
+const App=()=>{
+  return(
+    <>
+    <FirstName.Provider value={"Thapa"}>
+<LastName.Provider value={"Technical"}>
+<ComA />
+</LastName.Provider>
+  </FirstName.Provider>
+ 
+  </>
+  )
+}
+
+export default App;
+export { FirstName,LastName };
+------------
+compA.jsx
+---------
+import React, { Component } from 'react';
+import ComB from './comB'
+
+const ComA=()=>{
+    return <ComB />
+};
+export default ComA;
+=----------
+compB.jsx
+------------
+import React, { Component, useContext } from 'react';
+import ComC from './compC'
+import { FirstName,LastName } from './App';
+
+
+const ComB=()=>{
+    const fname=useContext(FirstName);
+    const lname=useContext(LastName)
+    
+    return <h1>My name is {fname}{lname} </h1>
+};
+ 
+export default ComB;
+-----------
+CompC.jsx
+----------
+import React from 'react';
+//import { FirstName } from './App';
+
+
+const ComC=()=>{
+    return <h1>Hello Good Evening</h1>
+};
+export default ComC;
+
+
+
+
+-----------
+use Effect
+=============
+import React, { Component, useEffect, useState } from 'react';
+const App=()=>{
+  const [num,setNum]=useState(0);
+  const [nums,setNums]=useState(0);
+  useEffect(()=>{
+    alert("I am clicked")
+  },[num])
+  return(
+    <>
+    <button onClick={()=>{setNum(num+1)}}><h1>Click Me {num}</h1></button>
+    <button onClick={()=>{setNums(nums-1)}}><h1>Click Me {nums}</h1></button>
+</>
+  );
+}
+export default App;
+
+
+
+
+
+
+============    |
+React Api Call	|
+-=--------------|
+Comp\A.jsx(referenced from pokemon api))
+-------------
+import React,{useState,useEffect} from "react";
+import axios from "axios";
+
+const ComA=()=>{
+    const[num ,SetNum]=useState()//setNum =is Updated balance where the modified balance is showing and [event.target.value] is used to show the property.
+    const [name,SetName]=useState();
+    const [moves,SetMoves]=useState();
+    
+    useEffect(()=>{
+        alert ("Hi")
+        async function getData(){
+            const res=await axios.get(`https://pokeapi.co/api/v2/pokemon/1${num}`)
+            console.log(res.data.moves.length)
+            SetName(res.data.name)
+            SetMoves(res.data.moves.length)
+        }
+        getData()
+    })
+    
+    return (
+        <>
+        
+        <h1>you choose {num} value</h1>
+        <h1>you choose {name} value</h1>
+        <h1>I have {moves} value</h1>
+    <select value={num} onChange={(event)=>{
+        SetNum(event.target.value);
+    }}>
+        <option value="1">1</option>
+        <option value="25">25</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </>
+ );
+};
+export default ComA;
+
+
+
+=============
+React Router
+=============
+npm install --save -react-router-dom
+-------
+app.jsx
+-------
+import React from "react";
+import {Route,Switch} from "react-router-dom";
+import About from './About';
+import Contact from './Contact';
+import Error from './Error';
+
+const App=()=>{
+  return 
+  (
+    <>
+ <Switch>
+    <Route exact path="/" component={About} />
+    <Route path="/contact" component={Contact} />//If extra
+    <Route component={Error} />
+ </Switch>
+
+    </>
+  )
+};
+export default App;
+About.jsx
+---------
+import React from "react";
+
+
+
+const About=()=>{
+    return <h1>Hello I am about</h1>
+};
+export default About;
+Contact.jsx
+----------
+import React from "react";
+
+
+
+const Contact=()=>{
+    return <h1>Hello I am about</h1>
+};
+export default Contact;
+
+
+=======
+Navbar
+-========
+import React from "react";
+import {Route,Switch} from "react-router-dom";
+import About from './About';
+import Contact from './Contact';
+import Error from './Error';
+
+const App=()=>{
+  return 
+  (
+    <>
+ <Switch>
+    <Route exact path="/" component={About} />
+    <Route path="/contact" component={Contact} />//If extra
+    <Route component={Error} />
+ </Switch>
+
+    </>
+  )
+};
+export default App;

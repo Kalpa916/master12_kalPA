@@ -1,0 +1,225 @@
+BootStrap
+---------
+> front-end framewrok (free), and it was developed by "Twitter" company.
+> frame work is a coll of ready-made "clssses" (css selectors), which can be used in webpages to apply styles to the elements easily.
+   BS => css + js
+	          
+> BS can be used w/o CSS knowledge also,   to customize the BS styles, CSS knowledge is req.
+
+> BS provides Responsive web design (inbuilt) & mobile-first web sties.
+
+> BS was devloped based on "jQuery" and "Popper".
+> jQuery is JavaScript lib, which provides set of functions to perform DOM manipulations.
+> Popper is a javaScript library, which provides a set of functions to display popup messages.
+
+				 
+				
+Bootstrap 
+---------
+1. It is a free front-end framework for faster and easier web development.
+
+2. It combines HTML, CSS and JS based design templates for typography, forms, buttons, tables, navigation, image carousels and numerous other components, as well as JavaScript plugins.
+
+3. It provides you with a convenient approach for creating responsive designs.
+
+What is Responsive Web Design?
+Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+
+
+
+Why use Bootstrap?
+-------------------------
+1. It is novice-friendly, so you don’t have to master HTML or CSS before diving into it.
+
+2. Its CSS works perfectly on either phones, tablets or desktops thanks to its responsive features.
+
+3. Its core framework styles are preset to mobile-first approach.
+
+4. All the modern browsers are entirely compatible with Bootstrap (Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari, and Opera).
+
+BootStrap Environment preparation
+---------------------------------
+download BS:
+	> go to http://getbootstrap.com (select bootstrap4.5, it downloads .zip file)
+	> extract that zip inot E:\BOOTSTRAP folder
+
+download jQuery:
+	> go to http://jquery.com (select Download the uncompressed, development jQuery 3.5.1)
+	> it open sroucecode then save (ctrl+s) that with a name "jquery-3.5.1.js" in E:\BOOTSTRAP folder
+
+download Popper:
+	> go to http://unpkg.com/popper.js (select Download the uncompressed, development jQuery 3.5.1)
+	> it open stoucecode then save that with a name "jquery-3.5.1.js" in E:\BOOTSTRAP folder
+
+importing (linker):
+   <link rel="stylesheet" href="bootstrap.css">
+   <script src="jquery-3.5.1.js"></script>
+   <script src="popper.js"></script>
+   <script src="bootstrap.js"></script>
+
+meta tag:
+   <meta name="viewport" content="width=device-width, inital-scale=1">
+
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+Note: All the files listed above have to be linked in the given order.
+
+For example: css/mdb.min.css must be always linked after css/bootstrap.min.css, and js/jquery-3.3.1.min.js must be always linked before js/bootstrap.min.js, etc.
+
+
+HTML5 doctype
+Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.
+
+**********************************************************
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <div style="height: 100vh">
+    <div class="flex-center flex-column">
+      <h1 class="animated fadeIn mb-2">Material Design for Bootstrap</h1>
+
+      <h5 class="animated fadeIn mb-1">Thank you for using our product. We're glad you're with us.</h5>
+
+      <p class="animated fadeIn text-muted">Siva Team</p>
+    </div>
+  </div>
+  <!-- /Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
+**************************************************
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+**************************************************
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+          </li>
+
+      </ul>
+      <!-- Links -->
+
+      <form class="form-inline">
+          <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </div>
+      </form>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->

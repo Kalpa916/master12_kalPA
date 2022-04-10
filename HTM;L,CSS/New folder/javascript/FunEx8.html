@@ -1,0 +1,37 @@
+<!-- example on functions  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex8</title>
+    <script> 
+	 function showMessage(from, text)   //formal arguments
+	 {
+	  from = '*' + from + '*'; //mod of FA
+	  document.write( from + ': ' + text );
+	 }
+   </script>
+ </head>
+ <body>
+   <h2> Demo on parameter </h2>
+   <script> 
+	let from = "Siva";	//primitive dt
+	let text = "Hello";
+
+	document.write( from +"<br>"); //AA
+	
+	showMessage(from, text);  //calling with copy of AA
+
+	// the value of "from" is the same, the function modified a local copy
+	document.write("<br>"+ from ); //AA
+   </script>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+

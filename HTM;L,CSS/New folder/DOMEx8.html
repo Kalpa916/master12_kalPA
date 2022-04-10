@@ -1,0 +1,33 @@
+<!-- example on document object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>DOM Demo</title>
+  <style>
+    .p1{
+      color:blue;
+      background-color:yellow;
+	}
+    #abc{
+      color:yellow;
+      background-color:blue;
+	}
+  </style>
+
+ </head>
+ <body>
+    <h1 id="abc"> green apples </h1>
+    <h3 id="abc"> red apples </h3>
+
+	<p class="p1">demo on selectors </p>
+	<p class="p1">demo2 on selectors </p>
+
+    <script>
+	  let a=document.querySelector("#abc") 
+      document.write(a+"<br>");
+
+	  let b=document.querySelectorAll(".p1")
+      document.write(b+"<br>");				
+    </script>
+ </body>
+</html>

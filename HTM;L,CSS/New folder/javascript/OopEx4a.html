@@ -1,0 +1,33 @@
+<!-- example on creating objects in both styles -->
+<Html>
+<head>
+  <title>Constructor</title>
+</head>
+<body>
+<h1> Object Creation styles </h1>
+<script>
+    //object with literal
+    var dept = {dno : 10, name : "sales", loc: "hyd"};
+
+    //constructor
+    function Employee(id,name,job,sal)
+	{
+	  this.id=id;
+	  this.name=name;
+	  this.job=job;
+	  this.sal=sal;
+	}
+
+    let emp=new Employee(1001,"Sam","ase",20000);
+
+	document.write("DeptNo	:"+ dept.dno +"<br>");
+	document.write("Name	:"+ dept.name +"<br>");
+	document.write("Location	:"+ dept.loc +"<br>");
+	document.write("EmpID	:"+ emp.id +"<br>");
+	document.write("Name	:"+ emp.name +"<br>");
+	document.write("Job	:"+ emp.job +"<br>");
+	document.write("Salary	:"+ emp.sal +"<br>");
+</script>
+</body>
+</html>
+
