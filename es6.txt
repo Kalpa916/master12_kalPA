@@ -4,7 +4,7 @@ var x = function(x, y) {
 }
 //ES6 onwards
 
-const x=(x,y)=>x*y
+const x=(x,y)=>x*y+0
 var cars=["BMW","Volvo","Mini"]
 
 var x
