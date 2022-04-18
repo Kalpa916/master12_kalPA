@@ -1,0 +1,3 @@
+Integration12---how to displAY DATA from any api
+myprojress=RESTAPI
+STR12-CLASS BASESD VIEWS
