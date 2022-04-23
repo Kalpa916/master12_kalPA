@@ -1,0 +1,32 @@
+{%load static%}
+<html>
+<head>
+  <link rel ="stylesheet" href="{%static 'css/static1.css'%}">
+  </head>
+  <body>
+    <h1><marquee>Welcome to the Images world</marquee></h1>
+    <ul>
+      <li>Date   {{date}}</li>
+      </ul>
+    <img src="{%static 'images/images12.jpg'%}">
+    <img src="{%static 'images/avenger1 (2).jpg'%}">
+    <img src="{%static 'images/F.png'%}">
+
+<table>
+<h3>STUDENTS INFORMATION</h3>
+<th>ID</th>
+<th>Name</th>
+<th>age</th>
+  <th>fees</th>
+  {% for student in stu %}
+  <tr>
+<td>{{student.id}}</td>
+<td>{{student.name}}</td>
+<td>{{student.fees}}</td>
+<td>{{student.age}}</td>
+
+  </tr>
+  {% endfor %}
+</table>
+        </body>
+        </html>

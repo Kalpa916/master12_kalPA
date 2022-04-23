@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: kalpataru7905@gmail.com
+Date: Thu, 22 Jul 2021 04:26:00 -0000
+Message-ID: <162692796030.12836.10049351978668771389@kanha>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/aq6m9c-1b63fa3c1198262fd1f256ed67d030d8/
+
+Your username, in case you’ve forgotten: kanha
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
